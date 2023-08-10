@@ -10,4 +10,6 @@ For creating loops with a long download time, I recommend a couple of steps. Set
 
 Depending on internet speeds, download time could take at least a few seconds per image. If there are any ideas to optimize this, let me know.
 
+Depending on the versions of packages in your environment, the images produced may be flipped initially. If this happens, find the two plt.imsave calls and change origin='lower' to origin='upper'.
+
 If posting a loop to Twitter, give me a tag @mark_debruin .
