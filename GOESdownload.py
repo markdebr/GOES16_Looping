@@ -366,7 +366,7 @@ def main():
     
     # Controls the temporary image directory that is created.
     # Will ensure the directory is empty before writing.
-    tempPath = os.path.join(os.getcwd(), 'TempImages')
+    tempPath = os.path.join(os.getcwd(), 'TempImages_GOES16')
     if os.path.isdir(tempPath) == False:
         os.mkdir(tempPath)
     for file in os.listdir(tempPath):
