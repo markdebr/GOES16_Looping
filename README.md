@@ -10,6 +10,8 @@ For creating loops with a long download time, I recommend a couple of steps. Set
 
 Depending on internet speeds, download time could take at least a few seconds per image. If there are any ideas to optimize this, let me know.
 
-Depending on the versions of packages in your environment, the images produced may be flipped initially. If this happens, find the two plt.imsave calls and change origin='lower' to origin='upper'.
+WARNING: Depending on the versions of packages in your environment, the images produced may be flipped initially. If this happens, find the two plt.imsave calls and change origin='lower' to origin='upper'.
+
+WARNING: Things get weird if you are indexing points near the edge of the GOES-16 CONUS domain. To alleviate this, you can change the product from 'ABI-L2-CMIPC' to 'ABI-L2-CMIPF', which will instead download the full GOES image beyond the CONUS. The downside is that download times will be significantly longer.
 
 If posting a loop to Twitter, give me a tag @mark_debruin .
